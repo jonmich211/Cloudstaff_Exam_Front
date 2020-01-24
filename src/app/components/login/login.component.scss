@@ -1,0 +1,68 @@
+$theme-colors: (
+  "success": #1c6288,
+  "danger": #ff4136
+);
+
+@import "../../../../node_modules/bootstrap/scss/bootstrap";
+@import "../../../variables";
+
+
+.main-section {
+    margin: 0 auto;
+    margin-top: 130px;
+    padding: 0;
+}
+
+.modal-content{
+    background-color: $primary-color;
+    opacity: .8;
+    padding: 0 18px;
+    border-radius: 10px;
+}
+
+.user-img{
+    margin-top: -60px;
+    margin-bottom: 45px;
+    img{
+        height: 120px;
+        width: 120px;
+    }
+}
+.form-group{
+    margin-bottom: 25px;
+    &::before{
+        font-family: 'Font Awesome\ 5 Free';
+        content: "\f1fa";
+        position: absolute;
+        font-size: 22px;
+        left: 28px;
+        padding-top: 8px;
+        color: #555e60;
+    }
+    &:last-of-type::before{
+        content: "\f023"
+    }
+    input{
+        height: 42px;
+        border-radius: 5px;
+        border: 0;
+        font-size: 18px;
+        letter-spacing: 2px;
+        padding-left: 54px;
+    }
+}
+
+.form-input{
+    button{
+        width: 40%;
+        margin: 5px 0 25px;
+    }
+}
+
+.btn-success {
+    font-size: 19px;
+    border-radius: 5px;
+    padding: 7px 14px;
+    border: 1px solid #daf1ff;
+    
+}
